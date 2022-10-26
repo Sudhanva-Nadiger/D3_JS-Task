@@ -1,0 +1,54 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(241, 4, 4), rgb(11, 137, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sorts button{
+    background-color: rgb(241, 101, 101);
+    color : white;
+    
+}
+
+.util-btns button{
+    background-color: rgb(110, 110, 233);
+    color : white;
+}
+
+.sorts button:hover{
+    background-color: rgb(239, 162, 162);
+}
+
+.util-btns button:hover{
+    background-color: rgb(149, 149, 233);
+    
+}
+
+rect {fill: blue;}
+    .sorted {fill: red;}
+    .min {fill: red;}
+    .testing {fill: red;}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js" defer></script>
+    <script src="./App.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+        <h1>Sorting Visualiser Algorithm</h1>
+   </header>
+   <div class="visualiser-wrapper">
+        <div class="btn-wrapper">
+            <div class="sorts">
+                <button onclick="bubbleSort()">Bubble Sort</button>
+                <button onclick="mergeSort()">Merge Sort</button>
+            </div>
+            <div class="steps">
+                Steps :
+                <span id="counter">0</span>
+            </div>
+            <div class="util-btns">
+                <button onclick="array = d3.shuffle(d3.range(1,count));reset()">Shuffle</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="sorting-bars">
+
+        </div>
+   </div>
+</body>
+</html>
